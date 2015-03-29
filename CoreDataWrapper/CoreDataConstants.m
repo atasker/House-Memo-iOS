@@ -1,11 +1,3 @@
-//
-//  CoreDataConstants.m
-//  ConferenceRoomBooker
-//
-//  Created by vijay on 4/8/13.
-//  Copyright (c) 2013 Vijay. All rights reserved.
-//
-
 #import "CoreDataConstants.h"
 
 @implementation CoreDataConstants
