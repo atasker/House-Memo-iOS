@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13D28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Notes" representedClassName="Notes" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="agent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bathrooms" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="bedrooms" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="garden" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="squareFootage" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="starCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pictures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Picture" inverseName="note" inverseEntity="Picture" syncable="YES"/>
+    </entity>
+    <entity name="Picture" representedClassName="Picture" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="img_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Notes" inverseName="pictures" inverseEntity="Notes" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Notes" positionX="0" positionY="0" width="128" height="225"/>
+        <element name="Picture" positionX="0" positionY="0" width="128" height="90"/>
+    </elements>
+</model>
