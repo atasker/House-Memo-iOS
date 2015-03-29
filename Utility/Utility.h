@@ -1,9 +1,7 @@
 //
 //  Utility.h
-//  MeccaBook
 //
-//  Created by Habib on 1/14/13.
-//  Copyright (c) 2013 Habib. All rights reserved.
+//  Copyright (c) 2014 Angus Tasker. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

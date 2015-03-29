@@ -2,7 +2,6 @@
 //  ImageViewController.m
 //  NextStep
 //
-//  Created by Habib on 4/3/14.
 //  Copyright (c) 2014 Angus Tasker. All rights reserved.
 //
 
@@ -45,11 +44,11 @@
     float factor = imgSize.width/screenSize.width;
     imgSize.width = screenSize.width;
     imgSize.height /= factor;
-    
+
     if ([Utility isCurrentDeviceIsInLandscapeMode])
     {
         imgVw.frame = CGRectMake((screenSize.height - imgSize.width)/2,(screenSize.width - imgSize.height)/2 + 32,imgSize.width,imgSize.height);
-        
+
     }
     else
     {
@@ -69,7 +68,7 @@
 */
 
 - (IBAction)deletePhoto:(id)sender {
-    
+
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"Do you want to delete the picture?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
     [alertView show];
 }
@@ -80,11 +79,11 @@
     {
         [[[DAL sharedInstance] managedObjectContext] deleteObject:self.pic];
         [[DAL sharedInstance] saveContext];
-        
+
         if (self.delegate && [self.delegate respondsToSelector:@selector(picDeleted:)])
             [self.delegate picDeleted:self.pic];
         [self.navigationController popViewControllerAnimated:YES];
-        
+
     }
 }
 

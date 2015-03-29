@@ -2,7 +2,6 @@
 //  ImageViewController.h
 //  NextStep
 //
-//  Created by Habib on 4/3/14.
 //  Copyright (c) 2014 Angus Tasker. All rights reserved.
 //
 
@@ -17,7 +16,7 @@
 @interface ImageViewController : UIViewController
 {
     IBOutlet UIImageView *imgVw;
-    
+
 }
 
 

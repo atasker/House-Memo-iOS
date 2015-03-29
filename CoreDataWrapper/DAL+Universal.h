@@ -1,9 +1,7 @@
 //
 //  DAL+Universal.h
-//  Club4Sms
 //
-//  Created by Habib Ali on 20/10/2013.
-//  Copyright (c) 2013 Habib Ali. All rights reserved.
+//  Copyright (c) 2014 Angus Tasker. All rights reserved.
 //
 
 #import "DAL.h"
